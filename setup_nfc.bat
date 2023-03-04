@@ -15,11 +15,10 @@ powershell -Command "Invoke-WebRequest 'https://github.com/New-Frontier-Craft/Ne
 ::Process Files
 if not exist output (
 	mkdir output
-	powershell -Command "Invoke-WebRequest 'https://github.com/New-Frontier-Craft/NFC-Server-Setup-Utility/output/start_server.bat' -OutFile 'lib.zip'"
+	powershell -Command "Invoke-WebRequest 'https://raw.githubusercontent.com/New-Frontier-Craft/NFC-Server-Setup-Utility/main/output/start_server.bat' -OutFile 'output\start_server.bat'"
 )
 powershell -Command Expand-Archive "lib.zip" "lib"
 move lib output
 ren *.jar vanilla_bukkit.jar
 xdelta3.exe -v -d -s "vanilla_bukkit.jar" "nfcpatch.xdelta" "output\NFC v3.4.2 S1 Server.jar"
-move start_server.bat output
 pause
