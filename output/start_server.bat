@@ -1,0 +1,1 @@
+java -jar -Xmx4G -Xms4G -Duser.language=en *.jar
