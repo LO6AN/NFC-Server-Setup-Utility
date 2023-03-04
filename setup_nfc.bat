@@ -8,7 +8,7 @@ if not exist *.jar (
 
 ::Download Libraries
 echo Downloading XDelta Patch
-powershell -Command "Invoke-WebRequest 'https://github.com/New-Frontier-Craft/New-Frontier-Craft/releases/download/v3.4.2/NFC_Patch_v3.4.2_S1.xdelta' -OutFile 'nfcpatch.xdelta'"
+powershell -Command "Invoke-WebRequest 'https://github.com/New-Frontier-Craft/New-Frontier-Craft/releases/download/v3.4.2/NFC_Patch_v3.4.2_S2.xdelta' -OutFile 'nfcpatch.xdelta'"
 echo Downloading NFC Libraries
 powershell -Command "Invoke-WebRequest 'https://github.com/New-Frontier-Craft/New-Frontier-Craft/releases/download/v3.4.1_02/lib.zip' -OutFile 'lib.zip'"
 
