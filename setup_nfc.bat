@@ -8,7 +8,7 @@ if not exist *.jar (
 
 ::Download Libraries
 echo Downloading XDelta Patch
-powershell -Command "Invoke-WebRequest 'https://github.com/New-Frontier-Craft/New-Frontier-Craft/releases/download/v3.4.2/NFC_Patch_v3.4.2_S3.xdelta' -OutFile 'nfcpatch.xdelta'"
+powershell -Command "Invoke-WebRequest 'https://github.com/New-Frontier-Craft/New-Frontier-Craft/releases/download/v3.4.2/NFC_Patch_v3.4.2_S4.xdelta' -OutFile 'nfcpatch.xdelta'"
 echo Downloading NFC Libraries
 powershell -Command "Invoke-WebRequest 'https://github.com/New-Frontier-Craft/New-Frontier-Craft/releases/download/v3.4.2/lib.zip' -OutFile 'lib.zip'"
 
@@ -20,5 +20,5 @@ if not exist output (
 powershell -Command Expand-Archive "lib.zip" "lib"
 move lib output
 ren *.jar vanilla_bukkit.jar
-xdelta3.exe -v -d -s "vanilla_bukkit.jar" "nfcpatch.xdelta" "output\NFC v3.4.2 S3 Server.jar"
+xdelta3.exe -v -d -s "vanilla_bukkit.jar" "nfcpatch.xdelta" "output\NFC v3.4.2 S4 Server.jar"
 pause
