@@ -1,1 +1,1 @@
-java -jar -Xmx4G -Xms4G -Duser.language=en "NFC v3.5.1 S2 Server.jar"
+java -jar -Xmx4G -Xms4G -Duser.language=en "NFC v3.5.1 S3 Server.jar"
